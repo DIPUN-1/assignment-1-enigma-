@@ -1,12 +1,11 @@
-#include<iostream>
+#include<iostream> 
 using namespace std;
 int main () {
-    int x,sum = 0;
-    cin>>x;
-    do{
-        sum += x%10;
-        x /= 10;
-    }while(x>0);
-    cout<<sum;
-    return 0;
+    int x = 1;
+    for(int i = 1;i<=5;++i){
+        for(int j = 1;j<=i;++j){
+            cout<<x++<<" ";
+        }
+        cout<<endl;
+    }
 }
